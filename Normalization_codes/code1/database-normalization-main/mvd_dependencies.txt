@@ -1,0 +1,5 @@
+OrderID ->> PromocodeUsed 
+DrinkID ->> DrinkIngredient
+DrinkID ->> DrinkAllergen
+FoodID ->> FoodIngredient
+FoodID ->> FoodAllergen

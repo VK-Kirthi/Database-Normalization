@@ -1,0 +1,42 @@
+CREATE TABLE CustomerID_table (
+  CustomerID VARCHAR(255) PRIMARY KEY,
+  CustomerName VARCHAR(255)
+);
+CREATE TABLE OrderID_table (
+  Date VARCHAR(255),
+  OrderID VARCHAR(255) PRIMARY KEY,
+  TotalFoodCost VARCHAR(255),
+  TotalCost VARCHAR(255),
+  TotalDrinkCost VARCHAR(255),
+  CustomerID VARCHAR(255)
+);
+CREATE TABLE DrinkID_table (
+  DrinkID VARCHAR(255) PRIMARY KEY,
+  DrinkName VARCHAR(255)
+);
+CREATE TABLE FoodID_table (
+  FoodID VARCHAR(255) PRIMARY KEY,
+  FoodName VARCHAR(255)
+);
+CREATE TABLE OrderID_DrinkID_table (
+ FOREIGN KEY (OrderID) REFERENCES OrderID_table(OrderID),
+ FOREIGN KEY (DrinkID) REFERENCES DrinkID_table(DrinkID),
+  DrinkSize VARCHAR(255),
+  DrinkQuantity VARCHAR(255),
+  Milk VARCHAR(255)
+);
+CREATE TABLE OrderID_FoodID_table (
+ FOREIGN KEY (OrderID) REFERENCES OrderID_table(OrderID),
+ FOREIGN KEY (FoodID) REFERENCES FoodID_table(FoodID),
+  FoodQuantity VARCHAR(255)
+);
+CREATE TABLE OrderID_DrinkID_FoodID_table (
+ FOREIGN KEY (OrderID) REFERENCES OrderID_table(OrderID),
+  PromocodeUsed VARCHAR(255),
+ FOREIGN KEY (DrinkID) REFERENCES DrinkID_table(DrinkID),
+  DrinkIngredient VARCHAR(255),
+  DrinkAllergen VARCHAR(255),
+ FOREIGN KEY (FoodID) REFERENCES FoodID_table(FoodID),
+  FoodIngredient VARCHAR(255),
+  FoodAllergen VARCHAR(255)
+);

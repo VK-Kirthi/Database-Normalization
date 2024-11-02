@@ -1,0 +1,9 @@
+StudentID : Integer, Non-null
+FirstName : Non-null, alphabetic characters only
+LastName : Non-null, alphabetic characters only
+Course : Non-null, values must be valid course codes
+Professor : Non-null, must be an alphabetic string
+ProfessorEmail : Text, must follow email format
+CourseStart : Non-null, must be before CourseEnd
+CourseEnd : Non-null, must be after CourseStart
+ClassRoom : Non-null, values must follow classroom naming conventions

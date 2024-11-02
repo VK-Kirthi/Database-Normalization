@@ -1,0 +1,8 @@
+StudentID,FirstName,LastName,Course,Professor,ProfessorEmail,CourseStart,CourseEnd,ClassRoom
+1,Nathan,Dawn,Math101,Dr.Ray,ray@mst.edu,01-01-2023,5/30/2023,M1
+1,Nathan,Dawn,Chem101,Dr.Pan,pan@mst.edu,02-01-2023,6/15/2023,C1
+2,Gayle,Blue,Math101,Dr.Ray,ray@mst.edu,01-01-2023,5/30/2023,M1
+2,Gayle,Blue,Chem101,Dr.Ray,ray@mst.edu,02-01-2023,6/15/2023,C2
+3,Alia,Able,Chem101,Dr.Pan,pan@mst.edu,02-01-2023,6/15/2023,C1
+4,Lavender,Cook,Bio101,Dr.Dave,dave@mst.edu,03-01-2023,7/20/2023,B1
+5,Enola,Holmes,Chem101,Dr.Pan,pan@mst.edu,02-01-2023,6/15/2023,C1
